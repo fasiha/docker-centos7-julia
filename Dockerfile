@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-RUN yum -y -q --noplugins install which make  && yum -y -q --noplugins groupinstall "Development Tools"
+RUN yum -y -q --noplugins install which make && yum -y -q --noplugins groupinstall "Development Tools"
 
 ENV JULIA_PATH /usr/local/julia
 ENV JULIA_VERSION 0.5.2
