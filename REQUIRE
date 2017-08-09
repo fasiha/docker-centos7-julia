@@ -12,6 +12,7 @@ GR 0.20.0
 IJulia 1.5.0
 Interpolations 0.6.2
 JLD 0.6.10
+JSON 0.12.0
 LinearOperators 0.3.0
 MAT 0.3.2
 NLopt 0.3.4
