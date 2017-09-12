@@ -5,7 +5,7 @@
 This repository contains all that’s needed to scratch a very, *very* specific itch: build a *certain* set of packages for a *certain* version of Julia for a *certain* Centos install. Viz.:
 
 - a set of packages I need, for
-- Julia 0.5.2, on
+- Julia 0.6, on
 - Centos7.
 
 ## Instructions
@@ -25,7 +25,7 @@ In a terminal, run
 make make_docker_image
 ```
 
-This will give Docker the `Dockerfile` and execute its instructions: start with a Centos7 image and install Julia 0.5.2 inside it.
+This will give Docker the `Dockerfile` and execute its instructions: start with a Centos7 image and install Julia 0.6 inside it.
 
 Then you should be able to execute the following to get a Julia session:
 ```

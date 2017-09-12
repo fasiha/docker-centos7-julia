@@ -7,7 +7,7 @@ PYPACKAGES=$(shell cat python-libraries.txt)
 install_packages:
 	mkdir -p dot-julia
 	docker run -it --rm -v $(shell pwd)/dot-julia:/root/.julia marconi_julia julia -e "Pkg.init()"
-	cp -f REQUIRE dot-julia/v0.5/
+	cp -f REQUIRE dot-julia/v0.6/
 	docker run -it --rm -v $(shell pwd)/dot-julia:/root/.julia marconi_julia julia -e "Pkg.resolve()"
-	docker run -it --rm -v $(shell pwd)/dot-julia:/root/.julia marconi_julia /root/.julia/v0.5/Conda/deps/usr/bin/pip install ${PYPACKAGES}
+	docker run -it --rm -v $(shell pwd)/dot-julia:/root/.julia marconi_julia /root/.julia/v0.6/Conda/deps/usr/bin/pip install ${PYPACKAGES}
 
