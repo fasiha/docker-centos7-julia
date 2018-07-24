@@ -1,1 +1,1 @@
-numpy scipy matplotlib ipython pandas pillow jupyter
+numpy scipy matplotlib ipython pandas pillow jupyter yapf mpmath sympy
